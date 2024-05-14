@@ -12,21 +12,23 @@ namespace JWTCore.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(string Uname, string Upss)
         {
+            var user = new User(
+       1,
+       "bruno.bernardes",
+       "Bruno Bernardes",
+       "bruno@gmail.com",
+       "q1w2e3r4t5",
+       ["developer"]);
+
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

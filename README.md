@@ -1,3 +1,3 @@
 # JWT .Net Core
 
-Implementation of an JWT in a .Net(7.0) core MVC application
+Implementation of an JWT in a .Net(8.0) core MVC application
